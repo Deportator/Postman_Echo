@@ -28,8 +28,8 @@ public class PostmanTest {
                 .statusCode(200)
                 .header("content-type", "application/json; charset=utf-8")
 
-                .body("data.", is("failed тест"))
-                .body("data", equalTo("failed тест"))
+                .body("data.", is("тест"))
+                .body("data", equalTo("тест"))
         ;
     }
 }
